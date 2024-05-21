@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eliud"
+    tools:context=".Profil">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/editTextName"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#78909C"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNumberHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/editTextNumberHeight"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="#546E7A"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextName"
+            tools:ignore="NotSibling" />
+
+        <EditText
+            android:id="@+id/editTextNumberWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/editTextNumberWeight"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="#546E7A"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumberHeight" />
+
+        <EditText
+            android:id="@+id/editTextNumberYears"
+            android:layout_width="247dp"
+            android:layout_height="51dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/editTextNumberYears"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="#455A64"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumberWeight" />
+
+        <RadioGroup
+            android:id="@+id/GenderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumberYears"
+            tools:ignore="MissingConstraints,TextSizeCheck">
+
+            <RadioButton
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radioButtonFemale"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMale"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:text="@string/radioButtonMale"
+                android:textColor="@color/black" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/textViewLevel"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/RunnerStatus"
+            app:layout_constraintTop_toBottomOf="@+id/GenderGroup"
+            app:layout_constraintVertical_bias="0.258"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="66dp" />
+
+        <RadioGroup
+            android:id="@+id/RunnerStatus"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="48dp"
+            android:orientation="horizontal"
+            android:background="@color/blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/GenderGroup"
+            tools:ignore="MissingConstraints,TextSizeCheck">
+
+            <RadioButton
+                android:id="@+id/radioButtonBegginer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radioButtonBeginner"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButtonIntermediate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radioButtonIntermediate"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAdvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radioButtonAdvanced"
+                android:textColor="@color/black" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupRaceType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonHalf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radioButtonHalf"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMarathon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radioButtonMarathon"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/radioButton10k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radioButton10k"
+                android:textColor="@color/black" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewGoals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/textViewGoals"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerRaceType" />
+
+        <EditText
+            android:id="@+id/editTextFinishTime"
+            android:layout_width="234dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/editTextFinishTime"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGoals" />
+
+    <Button
+        android:id="@+id/buttonGoToTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/buttonGoToTraining"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFinishTime" />
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">RunnerPlaner</string>
+    <string name="buttonNewPlan">Novi Plan</string>
+    <string name="buttonOld">Stari treninzi</string>
+
+    <string name="editTextName"> Unesi svoje ime </string>
+    <string name="editTextNumberHeight">Unesi svoju visinu u cm</string>
+    <string name="editTextNumberWeight">Unesi svoju tezinu u kg</string>
+    <string name="editTextNumberYears">Unesi svoj broj godina</string>
+    <string name="radioButtonMale">Musko</string>
+    <string name="radioButtonFemale">Zensko</string>
+    <string name="radioButtonBeginner">Pocetnik</string>
+    <string name="radioButtonIntermediate">Srednji nivo</string>
+    <string name="radioButtonAdvanced">Iskusan trkac</string>
+    <string name="textViewLevel">Odaberi svoj nivo</string>
+    <string name="textViewGoals">Koje je tvoje zeljeno vreme?</string>
+    <string name="editTextFinishTime">Uneti vreme u minutima</string>
+    <string name="textViewNewTraining">Unesi podatke svog novog treninga</string>
+    <string name="editTextDate">Training date</string>
+    <string name="buttonGoToTraining">Dalje</string>
+    <string name="editTextDistance">Unesite distancu koju ste pretrcali</string>
+    <string name="editTextTime">Unesite vreme za koje ste pretrcali datu distancu</string>
+    <string name="buttonSaveTraining">Sacuvaj trening</string>
+    <string name="buttonNext">Dalje</string>
+    <string name="editTextDateWeather">Unesite datum da proverimo vremenske uslove</string>
+    <string name="buttonGetWeather">Preuzmi vreme</string>
+    <string name="textViewWeatherTitle">Vremenski uslovi za trening</string>
+    <string name="buttonNextNext">Vrati se nazad</string>
+    <string name="radioButtonHalf">Polumaraton</string>
+    <string name="radioButtonMarathon">Maraton</string>
+    <string name="radioButton10k">10km</string>
+    <string name="textView2">Runner App</string>
+    <string name="archives">Archives</string>
+    <string name="imageViewLogo">Naslovna slika</string>
+    <string name="imageView">todo</string>
+    <string name="imageViewGif">Gif</string>
+    <string name="buttonBack">Dalje</string>
+    <string name="textViewNaslov1">RUN</string>
+    <string name="textViewNaslov2">APP</string>
+    <string name="textViewArhiva">Svi uneti treninzi</string>
+    <string name="buttonRefresh">Ucitaj vremenske uslove</string>
+    <string name="buttonBack1">Nazad</string>
+</resources>

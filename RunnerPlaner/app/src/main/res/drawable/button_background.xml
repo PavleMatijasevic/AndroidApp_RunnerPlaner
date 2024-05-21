@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/button_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="8dp" />
+            <solid android:color="#FF4081" /> <!-- Boja kada je dugme pritisnuto -->
+            <stroke android:color="#FF4081" android:width="2dp" /> <!-- Obrub kada je dugme pritisnuto -->
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="8dp" />
+            <solid android:color="#2196A3" /> <!-- Osnovna boja dugmeta -->
+            <stroke android:color="#2196F3" android:width="5dp" /> <!-- Obrub dugmeta -->
+        </shape>
+    </item>
+</selector>
